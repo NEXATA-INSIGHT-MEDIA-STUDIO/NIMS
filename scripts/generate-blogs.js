@@ -111,7 +111,7 @@ function generarArticulo(postPath, numero) {
 
   <meta
     property="og:image"
-    content="${SITE_URL}/${imagen.replace(/^\\.\\.\\//, "")}"
+    content="${SITE_URL}/${imagen.replace(/^\.\.\//, "")}"
   >
 
   <meta property="og:image:width" content="1200">
@@ -136,7 +136,7 @@ function generarArticulo(postPath, numero) {
 
   <meta
     name="twitter:image"
-    content="${SITE_URL}/${imagen.replace(/^\\.\\.\\//, "")}"
+    content="${SITE_URL}/${imagen.replace(/^\.\.\//, "")}"
   >
 
 </head>
