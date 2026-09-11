@@ -8,6 +8,7 @@ on:
       - "_posts/**"
       - "scripts/generate-blogs.js"
       - "package.json"
+      - ".github/workflows/generate-blogs.yml"
 
 permissions:
   contents: write
