@@ -1,1 +1,212 @@
+* {
 
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+}
+
+
+body {
+
+  min-height: 100vh;
+
+  background: #f0f2f5;
+
+  font-family: Arial, sans-serif;
+
+  color: #111;
+
+}
+
+
+.admin-wrapper {
+
+  min-height: 100vh;
+
+}
+
+
+.admin-header {
+
+  background: white;
+
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  padding: 0 25px;
+
+  border-bottom: 1px solid #ddd;
+
+}
+
+
+.admin-logo {
+
+  font-family: Arial, sans-serif;
+
+  font-size: 24px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+
+}
+
+
+.admin-subtitle {
+
+  margin-left: 10px;
+
+  font-size: 12px;
+
+  color: #777;
+
+  letter-spacing: 1px;
+
+}
+
+
+.admin-main {
+
+  width: 100%;
+
+  max-width: 900px;
+
+  margin: 50px auto;
+
+  padding: 20px;
+
+}
+
+
+.admin-card {
+
+  background: white;
+
+  border-radius: 18px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 5px 25px rgba(0,0,0,.08);
+
+}
+
+
+.admin-card h1 {
+
+  font-size: 28px;
+
+  margin-bottom: 10px;
+
+}
+
+
+.admin-card > p {
+
+  color: #666;
+
+  margin-bottom: 35px;
+
+}
+
+
+.admin-login {
+
+  border-top: 1px solid #eee;
+
+  padding-top: 30px;
+
+}
+
+
+.admin-login h2 {
+
+  margin-bottom: 10px;
+
+}
+
+
+.admin-login p {
+
+  color: #666;
+
+  margin-bottom: 20px;
+
+}
+
+
+.btn-login {
+
+  border: none;
+
+  background: #111;
+
+  color: white;
+
+  padding: 14px 24px;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: .2s;
+
+}
+
+
+.btn-login:hover {
+
+  transform: translateY(-2px);
+
+  opacity: .85;
+
+}
+
+
+@media (max-width: 600px) {
+
+  .admin-header {
+
+    padding: 0 15px;
+
+  }
+
+
+  .admin-subtitle {
+
+    display: none;
+
+  }
+
+
+  .admin-main {
+
+    margin: 25px auto;
+
+    padding: 15px;
+
+  }
+
+
+  .admin-card {
+
+    padding: 25px 20px;
+
+  }
+
+
+  .admin-card h1 {
+
+    font-size: 23px;
+
+  }
+
+}
