@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    NEXATA — Administrador
+  </title>
+
+  <link
+    rel="stylesheet"
+    href="admin.css"
+  >
+
+</head>
+
+<body>
+
+  <div class="admin-wrapper">
+
+    <header class="admin-header">
+
+      <div>
+
+        <span class="admin-logo">
+          NEXATA
+        </span>
+
+        <span class="admin-subtitle">
+          INSIGHT MEDIA STUDIO
+        </span>
+
+      </div>
+
+    </header>
+
+
+    <main class="admin-main">
+
+      <div class="admin-card">
+
+        <h1>
+          Administrador de contenido
+        </h1>
+
+        <p>
+          Desde aquí podrás crear y publicar
+          nuevos artículos de NEXATA.
+        </p>
+
+
+        <div class="admin-login">
+
+          <h2>
+            Iniciar sesión
+          </h2>
+
+          <p>
+            Accede al administrador para
+            comenzar a crear contenido.
+          </p>
+
+          <button
+            class="btn-login"
+            onclick="abrirCMS()"
+          >
+            ENTRAR AL EDITOR
+          </button>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+
+  <script>
+
+    function abrirCMS() {
+
+      window.location.href =
+        "./?cms=true";
+
+    }
+
+  </script>
+
+</body>
+
+</html>
