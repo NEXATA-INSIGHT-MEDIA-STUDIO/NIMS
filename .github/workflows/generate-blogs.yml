@@ -1,1 +1,50 @@
+name: Generar artículos NEXATA
 
+on:
+  push:
+    branches:
+      - "NUVARY-(B)"
+    paths:
+      - "_posts/**"
+      - "scripts/generate-blogs.js"
+      - "package.json"
+
+permissions:
+  contents: write
+
+jobs:
+  generar:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+        with:
+          ref: NUVARY-(B)
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Instalar dependencias
+        run: npm install
+
+      - name: Generar artículos HTML
+        run: npm run generate
+
+      - name: Guardar cambios en GitHub
+        run: |
+          git config user.name "NEXATA-Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add BLOGS/
+
+          if git diff --cached --quiet; then
+            echo "No hay cambios que guardar."
+          else
+            git commit -m "Generar artículos automáticamente"
+            git push origin NUVARY-(B)
+          fi
