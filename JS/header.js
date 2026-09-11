@@ -1,37 +1,7 @@
 /* =========================================================
    1. IDENTIFICAR LA RAÍZ DEL PROYECTO
    ---------------------------------------------------------
-   ¿Qué hace?
-
-   Detecta automáticamente dónde comienza
-   NEXATA-INSIGHT-MEDIA-STUDIO.
-
-   Esto permite que el sistema funcione
-   desde la raíz, BLOGS, u otras carpetas.
-========================================================= */
-
-const nombreProyecto = "/NEXATA-INSIGHT-MEDIA-STUDIO/";
-
-const posicionProyecto =
-  window.location.pathname.indexOf(nombreProyecto);
-
-
-/* =========================================================
-   2. CREAR LA RUTA BASE DEL PROYECTO
-   ---------------------------------------------------------
-   ¿Qué hace?
-
-   Construye automáticamente:
-
-   https://nuvary.github.io/
-   NEXATA-INSIGHT-MEDIA-STUDIO/
-
-   Así dejamos de depender de ../
-========================================================= */
-
-const rutaBase =
-  window.location.origin +
-  nombreProyecto;
+   const rutaBase = window.location.origin + "/";
 
 
 /* =========================================================
