@@ -21,13 +21,12 @@ jobs:
       - name: Descargar repositorio
         uses: actions/checkout@v4
         with:
-          ref: NUVARY-(B)
+          ref: "NUVARY-(B)"
 
       - name: Configurar Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
 
       - name: Instalar dependencias
         run: npm install
@@ -46,5 +45,5 @@ jobs:
             echo "No hay cambios que guardar."
           else
             git commit -m "Generar artículos automáticamente"
-            git push origin NUVARY-(B)
+            git push origin "NUVARY-(B)"
           fi
