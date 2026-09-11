@@ -1,17 +1,35 @@
 <!DOCTYPE html>
+
+<!-- NEXATA_SOURCE: una-prueba.md -->
+
 <html lang="es">
 
 <head>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <title>una prueba – NEXATA INSIGHT MEDIA STUDIO</title>
 
-  <link rel="stylesheet" href="../css/ui.css">
-  <link rel="stylesheet" href="../css/blogs.css">
+  <link
+    rel="stylesheet"
+    href="../css/ui.css"
+  >
 
-  <meta property="og:type" content="article">
+  <link
+    rel="stylesheet"
+    href="../css/blogs.css"
+  >
+
+
+  <meta
+    property="og:type"
+    content="article"
+  >
 
   <meta
     property="og:title"
@@ -33,10 +51,21 @@
     content="https://nexata.site/IMAGENES/Portada de blog/10.jpg"
   >
 
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta
+    property="og:image:width"
+    content="1200"
+  >
 
-  <meta property="og:image:type" content="image/jpeg">
+  <meta
+    property="og:image:height"
+    content="630"
+  >
+
+  <meta
+    property="og:image:type"
+    content="image/jpeg"
+  >
+
 
   <meta
     name="twitter:card"
@@ -60,11 +89,15 @@
 
 </head>
 
+
 <body>
+
 
   <div id="header-global"></div>
 
+
   <main class="container">
+
 
     <img
       src="../IMAGENES/Portada de blog/10.jpg"
@@ -72,11 +105,15 @@
       class="destacada"
     >
 
+
     <div class="autor-box">
+
 
       <div class="autor-contenido">
 
+
         <div class="autor-foto-box">
+
 
           <img
             src="https://nuvary.github.io/NEXATA-INSIGHT-MEDIA-STUDIO/IMAGENES/Foto%20de%20autor/0.jpg"
@@ -84,27 +121,41 @@
             class="autor-foto"
           >
 
-          <span class="estado-online"></span>
+
+          <span
+            class="estado-online"
+          ></span>
+
 
         </div>
 
+
         <div class="autor-info">
 
-          <h2>Dennis Palma</h2>
+
+          <h2>
+            Dennis Palma
+          </h2>
+
 
           <p>
             Diseñador Gráfico, Técnico en Ofimática y Programación
           </p>
 
+
           <small class="autor-fecha">
             Editado: 11 de septiembre de 2026 a las 10:26 p.m.
           </small>
 
+
         </div>
+
 
       </div>
 
+
       <div class="live-feed">
+
 
         <div class="live-head">
 
@@ -116,30 +167,54 @@
 
         </div>
 
+
         <div class="live-body">
+
 
           <div class="ticker">
 
-            <span>⚡ GTA 6 - 19 Nov 2026</span>
-            <span class="s">•</span>
+            <span>
+              ⚡ GTA 6 - 19 Nov 2026
+            </span>
 
-            <span>🚨 Alerta Sísmica Simulacro 2026</span>
-            <span class="s">•</span>
+            <span class="s">
+              •
+            </span>
 
-            <span>💿 Zorin OS 18 Beta</span>
-            <span class="s">•</span>
+            <span>
+              🚨 Alerta Sísmica Simulacro 2026
+            </span>
 
-            <span>🎙 Nuevos Podcast</span>
+            <span class="s">
+              •
+            </span>
+
+            <span>
+              💿 Zorin OS 18 Beta
+            </span>
+
+            <span class="s">
+              •
+            </span>
+
+            <span>
+              🎙 Nuevos Podcast
+            </span>
 
           </div>
 
+
         </div>
+
 
       </div>
 
+
     </div>
 
+
     <div class="social">
+
 
       <a
         class="facebook"
@@ -150,6 +225,7 @@
         Compartir en Facebook
       </a>
 
+
       <a
         class="twitter"
         href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fnexata.site%2FBLOGS%2F14.html&text=una%20prueba"
@@ -158,6 +234,7 @@
       >
         Compartir en X
       </a>
+
 
       <a
         class="whatsapp"
@@ -168,36 +245,48 @@
         Compartir en WhatsApp
       </a>
 
+
     </div>
 
+
     <article class="blog-content">
+
 
       <h1>
         una prueba
       </h1>
 
+
       <p>hola mundo</p>
+
 
 
     </article>
 
+
   </main>
 
+
   <section class="comentarios-box">
+
 
     <button id="loginGoogle">
       🔑 Iniciar sesión con Google
     </button>
 
+
     <button id="logoutGoogle">
       🚪 Cerrar sesión
     </button>
 
+
     <div id="usuarioActual"></div>
+
 
     <h2 id="contadorComentarios">
       💬 Comentarios (0)
     </h2>
+
 
     <span
       id="ayudaComentarios"
@@ -206,31 +295,42 @@
       ❓
     </span>
 
+
     <input
       type="text"
       id="nombre"
       placeholder="Nombre (opcional)"
     >
 
+
     <textarea
       id="comentario"
       placeholder="Escribe tu comentario..."
     ></textarea>
 
-    <button onclick="enviarComentario()">
+
+    <button
+      onclick="enviarComentario()"
+    >
       Publicar comentario
     </button>
 
+
     <div id="listaComentarios"></div>
+
 
   </section>
 
+
   <script src="../JS/header.js"></script>
+
 
   <script type="module">
 
+
     import { initializeApp }
     from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
 
     import {
       getFirestore,
@@ -247,6 +347,7 @@
     }
     from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
+
     import {
       getAuth,
       GoogleAuthProvider,
@@ -256,54 +357,80 @@
     }
     from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
+
     const firebaseConfig = {
 
-      apiKey: "AIzaSyCsucEr-t1QVVIdG6YnWLm-5p5Kzp6nwUk",
+      apiKey:
+        "AIzaSyCsucEr-t1QVVIdG6YnWLm-5p5Kzp6nwUk",
 
-      authDomain: "comentarios-nims.firebaseapp.com",
+      authDomain:
+        "comentarios-nims.firebaseapp.com",
 
-      projectId: "comentarios-nims",
+      projectId:
+        "comentarios-nims",
 
-      storageBucket: "comentarios-nims.firebasestorage.app",
+      storageBucket:
+        "comentarios-nims.firebasestorage.app",
 
-      messagingSenderId: "529237253093",
+      messagingSenderId:
+        "529237253093",
 
-      appId: "1:529237253093:web:1cb81ffe914c89be172d0c"
+      appId:
+        "1:529237253093:web:1cb81ffe914c89be172d0c"
 
     };
 
-    const app = initializeApp(firebaseConfig);
 
-    const db = getFirestore(app);
+    const app =
+      initializeApp(firebaseConfig);
 
-    const auth = getAuth(app);
 
-    const provider = new GoogleAuthProvider();
+    const db =
+      getFirestore(app);
+
+
+    const auth =
+      getAuth(app);
+
+
+    const provider =
+      new GoogleAuthProvider();
+
 
     let usuario = null;
 
-    const articulo = "14";
 
-    onAuthStateChanged(auth, (user) => {
+    const articulo =
+      "14";
 
-      usuario = user;
 
-      const info =
-        document.getElementById("usuarioActual");
+    onAuthStateChanged(
+      auth,
+      (user) => {
 
-      if (user) {
+        usuario = user;
 
-        info.innerHTML =
-          `✅ ${user.displayName}`;
+        const info =
+          document.getElementById(
+            "usuarioActual"
+          );
 
-      } else {
 
-        info.innerHTML =
-          "Invitado";
+        if (user) {
+
+          info.innerHTML =
+            `✅ ${user.displayName}`;
+
+        } else {
+
+          info.innerHTML =
+            "Invitado";
+
+        }
 
       }
+    );
 
-    });
 
     document
       .getElementById("loginGoogle")
@@ -318,11 +445,14 @@
 
         } catch (error) {
 
-          alert(error.message);
+          alert(
+            error.message
+          );
 
         }
 
       };
+
 
     document
       .getElementById("logoutGoogle")
@@ -332,195 +462,246 @@
 
       };
 
-    window.enviarComentario = async () => {
 
-      const nombre =
-        document
-          .getElementById("nombre")
-          .value
-          .trim() || "Anónimo";
+    window.enviarComentario =
+      async () => {
 
-      const comentario =
-        document
-          .getElementById("comentario")
-          .value
-          .trim();
 
-      if (!comentario) {
+        const nombre =
+          document
+            .getElementById("nombre")
+            .value
+            .trim() ||
+          "Anónimo";
 
-        alert("Escribe un comentario");
 
-        return;
+        const comentario =
+          document
+            .getElementById("comentario")
+            .value
+            .trim();
 
-      }
 
-      const ultimaPublicacion =
-        localStorage.getItem(
-          "ultimoComentario"
-        );
+        if (!comentario) {
 
-      const ahora = Date.now();
+          alert(
+            "Escribe un comentario"
+          );
 
-      if (
-        ultimaPublicacion &&
-        ahora - Number(ultimaPublicacion) < 30000
-      ) {
-
-        alert(
-          "Espera 30 segundos antes de comentar nuevamente."
-        );
-
-        return;
-
-      }
-
-      await addDoc(
-        collection(db, "comentarios"),
-        {
-
-          articulo,
-
-          nombre,
-
-          comentario,
-
-          likes: 0,
-
-          uid: usuario
-            ? usuario.uid
-            : null,
-
-          fecha:
-            new Date().toISOString()
+          return;
 
         }
-      );
 
-      localStorage.setItem(
-        "ultimoComentario",
-        Date.now()
-      );
 
-      document
-        .getElementById("comentario")
-        .value = "";
+        const ultimaPublicacion =
+          localStorage.getItem(
+            "ultimoComentario"
+          );
 
-      cargarComentarios();
 
-    };
+        const ahora =
+          Date.now();
+
+
+        if (
+          ultimaPublicacion &&
+          ahora -
+            Number(ultimaPublicacion) <
+            30000
+        ) {
+
+          alert(
+            "Espera 30 segundos antes de comentar nuevamente."
+          );
+
+          return;
+
+        }
+
+
+        await addDoc(
+          collection(
+            db,
+            "comentarios"
+          ),
+          {
+
+            articulo,
+
+            nombre,
+
+            comentario,
+
+            likes: 0,
+
+            uid:
+              usuario
+                ? usuario.uid
+                : null,
+
+            fecha:
+              new Date().toISOString()
+
+          }
+        );
+
+
+        localStorage.setItem(
+          "ultimoComentario",
+          Date.now()
+        );
+
+
+        document
+          .getElementById(
+            "comentario"
+          )
+          .value = "";
+
+
+        cargarComentarios();
+
+      };
+
 
     async function cargarComentarios() {
 
+
       let total = 0;
+
 
       const lista =
         document.getElementById(
           "listaComentarios"
         );
 
+
       lista.innerHTML =
         "Cargando comentarios...";
 
-      const q = query(
 
-        collection(
-          db,
-          "comentarios"
-        ),
+      const q =
+        query(
 
-        where(
-          "articulo",
-          "==",
-          articulo
-        ),
+          collection(
+            db,
+            "comentarios"
+          ),
 
-        orderBy(
-          "fecha",
-          "desc"
-        )
+          where(
+            "articulo",
+            "==",
+            articulo
+          ),
 
-      );
+          orderBy(
+            "fecha",
+            "desc"
+          )
+
+        );
+
 
       const datos =
         await getDocs(q);
 
+
       lista.innerHTML = "";
 
-      datos.forEach((doc) => {
 
-        total++;
+      datos.forEach(
+        (doc) => {
 
-        const c =
-          doc.data();
 
-        const id =
-          doc.id;
+          total++;
 
-        let botonEliminar = "";
 
-        const ADMIN_EMAIL =
-          "diamantesdmpj@gmail.com";
+          const c =
+            doc.data();
 
-        if (
 
-          (usuario &&
-            usuario.email === ADMIN_EMAIL)
+          const id =
+            doc.id;
 
-          ||
 
-          (usuario &&
-            usuario.uid === c.uid)
+          let botonEliminar =
+            "";
 
-        ) {
 
-          botonEliminar =
+          const ADMIN_EMAIL =
+            "diamantesdmpj@gmail.com";
 
-            `<button onclick="eliminarComentario('${id}')">
-              🗑 Eliminar
-            </button>`;
 
-        }
+          if (
 
-        const fecha =
-          new Date(
-            c.fecha
-          ).toLocaleString();
+            (
+              usuario &&
+              usuario.email ===
+                ADMIN_EMAIL
+            )
 
-        lista.innerHTML += `
+            ||
 
-          <div class="comentario">
+            (
+              usuario &&
+              usuario.uid === c.uid
+            )
 
-            <strong>
-              ${c.nombre}
-            </strong>
+          ) {
 
-            <p>
-              ${c.comentario}
-            </p>
+            botonEliminar =
 
-            <div class="fecha">
-              ${fecha}
+              `<button onclick="eliminarComentario('${id}')">
+                🗑 Eliminar
+              </button>`;
+
+          }
+
+
+          const fecha =
+            new Date(
+              c.fecha
+            ).toLocaleString();
+
+
+          lista.innerHTML += `
+
+            <div class="comentario">
+
+              <strong>
+                ${c.nombre}
+              </strong>
+
+              <p>
+                ${c.comentario}
+              </p>
+
+              <div class="fecha">
+                ${fecha}
+              </div>
+
+              <button
+                onclick="darLike('${id}')"
+              >
+                👍 ${c.likes || 0}
+              </button>
+
+              ${botonEliminar}
+
             </div>
 
-            <button
-              onclick="darLike('${id}')"
-            >
-              👍 ${c.likes || 0}
-            </button>
+          `;
 
-            ${botonEliminar}
+        }
+      );
 
-          </div>
-
-        `;
-
-      });
 
       document
         .getElementById(
           "ayudaComentarios"
         )
         .onclick = () => {
+
 
           alert(
 
@@ -534,6 +715,7 @@
 
         };
 
+
       document
         .getElementById(
           "contadorComentarios"
@@ -543,49 +725,60 @@
 
     }
 
-    window.darLike = async (id) => {
 
-      const clave =
-        "like_" + id;
+    window.darLike =
+      async (id) => {
 
-      if (
-        localStorage.getItem(clave)
-      ) {
 
-        alert(
-          "Ya diste like a este comentario."
-        );
+        const clave =
+          "like_" + id;
 
-        return;
 
-      }
+        if (
+          localStorage.getItem(
+            clave
+          )
+        ) {
 
-      await updateDoc(
+          alert(
+            "Ya diste like a este comentario."
+          );
 
-        doc(
-          db,
-          "comentarios",
-          id
-        ),
+          return;
 
-        {
-          likes:
-            increment(1)
         }
 
-      );
 
-      localStorage.setItem(
-        clave,
-        "1"
-      );
+        await updateDoc(
 
-      cargarComentarios();
+          doc(
+            db,
+            "comentarios",
+            id
+          ),
 
-    };
+          {
+            likes:
+              increment(1)
+          }
+
+        );
+
+
+        localStorage.setItem(
+          clave,
+          "1"
+        );
+
+
+        cargarComentarios();
+
+      };
+
 
     window.eliminarComentario =
       async (id) => {
+
 
         if (
           !confirm(
@@ -597,6 +790,7 @@
 
         }
 
+
         await deleteDoc(
 
           doc(
@@ -607,13 +801,17 @@
 
         );
 
+
         cargarComentarios();
 
       };
 
+
     cargarComentarios();
 
+
   </script>
+
 
 </body>
 </html>
