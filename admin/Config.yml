@@ -1,23 +1,15 @@
 backend:
-
   name: github
-
   repo: NUVARY/NUVARY-B
-
   branch: main
 
-
 media_folder: "IMAGENES/Portada de blog"
-
 public_folder: "/NEXATA-INSIGHT-MEDIA-STUDIO/IMAGENES/Portada%20de%20blog"
-
 
 collections:
 
   - name: "articulos"
-
     label: "Artículos"
-
     label_singular: "Artículo"
 
     folder: "_posts"
@@ -30,69 +22,38 @@ collections:
 
     slug: "{{slug}}"
 
-
     fields:
 
-
       - label: "Título"
-
         name: "title"
-
         widget: "string"
-
         hint: "Título principal del artículo."
 
-
       - label: "Descripción"
-
         name: "description"
-
         widget: "text"
-
-        hint: "Descripción corta para compartir el artículo."
-
+        hint: "Descripción breve del artículo."
 
       - label: "Categoría"
-
         name: "category"
-
         widget: "select"
-
         options:
-
           - "Tecnología"
-
           - "Juegos"
-
           - "Marketing y motivación"
-
           - "Finanzas personales"
-
           - "Salud"
-
           - "Curiosidades del mundo"
-
           - "Todo y más"
 
-
       - label: "Imagen destacada"
-
         name: "image"
-
         widget: "image"
 
-
       - label: "Fecha de publicación"
-
         name: "date"
-
         widget: "datetime"
 
-        default: ""
-
-
       - label: "Contenido"
-
         name: "body"
-
         widget: "markdown"
