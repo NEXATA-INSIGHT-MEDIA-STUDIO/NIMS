@@ -1,7 +1,8 @@
 backend:
   name: github
-  repo: NUVARY/NUVARY-B
-  branch: main
+  repo: NUVARY/NEXATA-INSIGHT-MEDIA-STUDIO
+  branch: NUVARY-(B)
+  site_domain: stellar-frangollo-e1f250.netlify.app
 
 media_folder: "IMAGENES/Portada de blog"
 public_folder: "/NEXATA-INSIGHT-MEDIA-STUDIO/IMAGENES/Portada%20de%20blog"
