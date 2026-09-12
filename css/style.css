@@ -278,14 +278,20 @@ body {
     display:none;
 }
 
+
 /* =========================================================
-   RECOMENDACIONES
+   RECOMENDACIONES Y CATEGORÍAS
    ========================================================= */
+
+.categorias {
+  text-align: center;
+}
+
+/* RECOMENDACIONES */
 
 .recomendacion-mercadolibre {
   text-align: center;
   padding: 20px 15px;
-  margin-bottom: 15px;
 }
 
 .recomendaciones-etiqueta {
@@ -324,6 +330,36 @@ body {
 .btn-mercadolibre:hover {
   transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* LÍNEA DIVISORA */
+
+.menu-categorias {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 15px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+/* BOTÓN CATEGORÍAS */
+
+.menu-categorias summary {
+  cursor: pointer;
+  text-align: center;
+  list-style: none;
+}
+
+/* Oculta la flecha predeterminada */
+
+.menu-categorias summary::-webkit-details-marker {
+  display: none;
+}
+
+/* CENTRAR LOS ENLACES */
+
+.menu-categorias a {
+  display: block;
+  text-align: center;
 }
 
 /* ===================== */
