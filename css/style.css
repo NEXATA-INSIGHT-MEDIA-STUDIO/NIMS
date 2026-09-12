@@ -279,17 +279,40 @@ body {
 }
 
 /* =========================================================
-   RECOMENDACIONES MERCADO LIBRE
+   RECOMENDACIONES
    ========================================================= */
 
 .recomendacion-mercadolibre {
   text-align: center;
+  padding: 20px 15px;
+  margin-bottom: 15px;
+}
+
+.recomendaciones-etiqueta {
+  display: block;
+  margin-bottom: 8px;
+  color: #94a3b8;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.recomendacion-mercadolibre h2 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 21px;
+}
+
+.recomendacion-mercadolibre p {
+  color: #94a3b8;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 18px;
 }
 
 .btn-mercadolibre {
   display: inline-block;
-  margin-top: 15px;
-  padding: 12px 22px;
+  padding: 11px 18px;
   background: #ffd600;
   color: #111;
   text-decoration: none;
