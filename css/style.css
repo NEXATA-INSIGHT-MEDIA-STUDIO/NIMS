@@ -308,6 +308,13 @@ body {
   color: #fff;
   font-size: 21px;
 }
+.recomendacion-mercadolibre h2 {
+  margin: 0 0 10px;
+  color: #fff !important;
+  font-size: 21px;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 
 .recomendacion-mercadolibre p {
   color: #94a3b8;
