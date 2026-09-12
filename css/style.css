@@ -305,15 +305,12 @@ body {
 
 .recomendacion-mercadolibre h2 {
   margin: 0 0 10px;
-  color: #fff;
+  color: #ffffff !important;
   font-size: 21px;
-}
-.recomendacion-mercadolibre h2 {
-  margin: 0 0 10px;
-  color: #fff !important;
-  font-size: 21px;
+  font-weight: 700;
   opacity: 1 !important;
   visibility: visible !important;
+  display: block !important;
 }
 
 .recomendacion-mercadolibre p {
