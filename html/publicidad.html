@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Publicidad | NEXATA INSIGHT MEDIA STUDIO</title>
+
+  <style>
+
+    /* =========================================================
+       CONFIGURACIÓN GENERAL
+       ========================================================= */
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #07122f;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+
+    /* =========================================================
+       HEADER
+       ========================================================= */
+
+    header {
+      background: #031a3d;
+      padding: 18px 25px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .volver {
+      background: rgba(255,255,255,0.08);
+      padding: 9px 15px;
+      border-radius: 20px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+
+    .volver:hover {
+      background: rgba(255,255,255,0.18);
+    }
+
+
+    /* =========================================================
+       CONTENEDOR
+       ========================================================= */
+
+    .contenedor {
+      max-width: 1100px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+
+    /* =========================================================
+       PRESENTACIÓN
+       ========================================================= */
+
+    .presentacion {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .presentacion h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+    }
+
+    .presentacion p {
+      max-width: 700px;
+      margin: auto;
+      color: #cbd5e1;
+      font-size: 17px;
+    }
+
+
+    /* =========================================================
+       TARJETAS DE PUBLICIDAD
+       ========================================================= */
+
+    .planes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .plan {
+      background: rgba(11,18,32,0.8);
+      border: 1px solid rgba(255,255,255,0.10);
+      border-radius: 14px;
+      padding: 30px 25px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .plan:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255,255,255,0.25);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    }
+
+    .plan h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .precio {
+      font-size: 32px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .precio span {
+      font-size: 14px;
+      color: #94a3b8;
+      font-weight: normal;
+    }
+
+    .plan ul {
+      list-style: none;
+      text-align: left;
+      margin: 20px 0;
+    }
+
+    .plan li {
+      margin: 10px 0;
+      color: #dbe4f0;
+    }
+
+    .plan li::before {
+      content: "✓";
+      margin-right: 9px;
+      font-weight: bold;
+    }
+
+    .boton-plan {
+      display: inline-block;
+      width: 100%;
+      padding: 12px;
+      border-radius: 25px;
+      background: #ffffff;
+      color: #07122f;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .boton-plan:hover {
+      transform: scale(1.03);
+      opacity: 0.9;
+    }
+
+
+    /* =========================================================
+       INFORMACIÓN
+       ========================================================= */
+
+    .informacion {
+      margin-top: 55px;
+      background: rgba(11,18,32,0.8);
+      border-radius: 14px;
+      padding: 30px;
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .informacion h2 {
+      margin-bottom: 15px;
+    }
+
+    .informacion p {
+      color: #cbd5e1;
+      margin-bottom: 12px;
+    }
+
+
+    /* =========================================================
+       CONTACTO
+       ========================================================= */
+
+    .contacto {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .contacto h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .contacto p {
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .whatsapp {
+      display: inline-block;
+      background: #25D366;
+      color: #ffffff;
+      padding: 13px 25px;
+      border-radius: 25px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .whatsapp:hover {
+      transform: scale(1.04);
+    }
+
+
+    /* =========================================================
+       FOOTER
+       ========================================================= */
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 50px;
+      color: #94a3b8;
+      font-size: 13px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+
+
+    /* =========================================================
+       RESPONSIVE
+       ========================================================= */
+
+    @media (max-width: 768px) {
+
+      header {
+        padding: 15px;
+      }
+
+      .logo {
+        font-size: 16px;
+      }
+
+      .presentacion h1 {
+        font-size: 29px;
+      }
+
+      .presentacion p {
+        font-size: 15px;
+      }
+
+      .planes {
+        grid-template-columns: 1fr;
+      }
+
+      .contenedor {
+        padding: 35px 15px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <!-- =========================================================
+       HEADER
+       ========================================================= -->
+
+  <header>
+
+    <div class="logo">
+      NEXATA
+    </div>
+
+    <a
+      href="index.html"
+      class="volver"
+    >
+      ← Volver
+    </a>
+
+  </header>
+
+
+
+  <!-- =========================================================
+       CONTENIDO
+       ========================================================= -->
+
+  <main class="contenedor">
+
+
+    <!-- PRESENTACIÓN -->
+
+    <section class="presentacion">
+
+      <h1>
+        Publicidad en NEXATA
+      </h1>
+
+      <p>
+        Haz que tu proyecto, negocio, producto o servicio
+        llegue a nuevos lectores a través de
+        NEXATA INSIGHT MEDIA STUDIO.
+      </p>
+
+    </section>
+
+
+
+    <!-- PLANES -->
+
+    <section class="planes">
+
+
+      <!-- PUBLICIDAD BÁSICA -->
+
+      <article class="plan">
+
+        <h2>
+          Publicidad Básica
+        </h2>
+
+        <div class="precio">
+          $100
+          <span>MXN / mes</span>
+        </div>
+
+        <ul>
+
+          <li>Banner publicitario</li>
+
+          <li>Nombre de tu negocio o proyecto</li>
+
+          <li>Enlace hacia tu página</li>
+
+          <li>Presencia durante 30 días</li>
+
+        </ul>
+
+        <a
+          class="boton-plan"
+          href="https://wa.me/TUNUMERO?text=Hola,%20me%20interesa%20la%20Publicidad%20Básica%20de%20NEXATA."
+          target="_blank"
+        >
+          Me interesa
+        </a>
+
+      </article>
+
+
+
+      <!-- PUBLICIDAD DESTACADA -->
+
+      <article class="plan">
+
+        <h2>
+          Publicidad Destacada
+        </h2>
+
+        <div class="precio">
+          $200
+          <span>MXN / mes</span>
+        </div>
+
+        <ul>
+
+          <li>Banner más visible</li>
+
+          <li>Nombre y descripción</li>
+
+          <li>Enlace directo</li>
+
+          <li>Mayor presencia dentro del sitio</li>
+
+          <li>30 días de publicación</li>
+
+        </ul>
+
+        <a
+          class="boton-plan"
+          href="https://wa.me/TUNUMERO?text=Hola,%20me%20interesa%20la%20Publicidad%20Destacada%20de%20NEXATA."
+          target="_blank"
+        >
+          Me interesa
+        </a>
+
+      </article>
+
+
+
+      <!-- PUBLICACIÓN PATROCINADA -->
+
+      <article class="plan">
+
+        <h2>
+          Publicación Patrocinada
+        </h2>
+
+        <div class="precio">
+          $300
+          <span>MXN</span>
+        </div>
+
+        <ul>
+
+          <li>Artículo dedicado</li>
+
+          <li>Imagen proporcionada por el anunciante</li>
+
+          <li>Descripción del proyecto</li>
+
+          <li>Enlace hacia su sitio</li>
+
+          <li>Publicación permanente</li>
+
+        </ul>
+
+        <a
+          class="boton-plan"
+          href="https://wa.me/TUNUMERO?text=Hola,%20me%20interesa%20una%20Publicación%20Patrocinada%20en%20NEXATA."
+          target="_blank"
+        >
+          Me interesa
+        </a>
+
+      </article>
+
+
+    </section>
+
+
+
+    <!-- INFORMACIÓN -->
+
+    <section class="informacion">
+
+      <h2>
+        ¿Cómo funciona?
+      </h2>
+
+      <p>
+        1. Elige el tipo de publicidad que te interesa.
+      </p>
+
+      <p>
+        2. Contáctanos para conocer la disponibilidad.
+      </p>
+
+      <p>
+        3. Envíanos la información y material de tu proyecto.
+      </p>
+
+      <p>
+        4. Revisamos el contenido antes de publicarlo.
+      </p>
+
+      <p>
+        5. Una vez confirmado el servicio, tu publicidad
+        será publicada en NEXATA durante el periodo acordado.
+      </p>
+
+    </section>
+
+
+
+    <!-- CONTACTO -->
+
+    <section class="contacto">
+
+      <h2>
+        ¿Quieres anunciarte en NEXATA?
+      </h2>
+
+      <p>
+        Escríbenos y te ayudaremos a elegir la opción
+        adecuada para tu proyecto.
+      </p>
+
+      <a
+        class="whatsapp"
+        href="https://wa.me/TUNUMERO?text=Hola,%20quiero%20información%20sobre%20publicidad%20en%20NEXATA."
+        target="_blank"
+      >
+        💬 Contactar por WhatsApp
+      </a>
+
+    </section>
+
+
+  </main>
+
+
+
+  <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+
+  <footer>
+
+    © 2026 NEXATA INSIGHT MEDIA STUDIO
+
+  </footer>
+
+
+</body>
+
+</html>
